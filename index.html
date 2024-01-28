@@ -1,9 +1,66 @@
+Certainly, I can combine the HTML, CSS, and JavaScript code into a single document for your convenience. Here's the complete code:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Web Dev Agency Portfolio</title>
+    <title>Web Dev Agency Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="about">
+            <h1>Welcome to Private</h1>
+            <p>At Private, we breathe life into your ideas. Our dedicated team of developers and designers are committed to crafting websites that not only look stunning but also function seamlessly. We understand that your website is the digital face of your business, and our mission is to ensure that it represents you in the best light possible. We're more than just a web development agency; we're your partners in navigating the digital world.</p>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Expertise</h2>
+            <p>We specialize in a wide array of web development services to cater to all your digital needs:</p>
+            <ul>
+                <li><strong>Custom Web Design & Development:</strong> Tailor-made websites that resonate with your brand identity and engage your audience.</li>
+                <li><strong>E-Commerce Solutions:</strong> Robust platforms that offer seamless shopping experiences, complete with secure payment integrations.</li>
+                <li><strong>Responsive Web Design:</strong> Websites that look and work perfectly on any device, be it desktops, tablets, or smartphones.</li>
+                <li><strong>Content Management Systems (CMS):</strong> Empower you to manage and update your website content with ease.</li>
+                <li><strong>SEO & Digital Marketing:</strong> Strategies that boost your online presence and attract more visitors.</li>
+                <li><strong>Website Maintenance & Support:</strong> Ongoing support to ensure your website stays updated and performs flawlessly.</li>
+            </ul>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+            <p>Discover the creativity and technical expertise of our team through our portfolio. Each project is a testament to our dedication to excellence and our commitment to delivering outstanding results.</p>
+            <!-- Insert portfolio items here. Use <img> tags for images and <p> for descriptions. -->
+        </section>
+        <section id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <p>Hear directly from our clients about how our digital solutions have transformed their businesses.</p>
+            <!-- Insert testimonials here. Use <blockquote> for quotes and <p> for author names. -->
+        </section>
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <p>Ready to start your project or have a question for us? We'd love to hear from you and explore how we can work together to turn your vision into reality.</p>
+            <div class="contact-buttons">
+                <a href="mailto:lefayis@proton.me" class="button contact-button">Email Us</a>
+                <a href="https://discord.gg/A6NTBDPVyC" class="button contact-button">Join Our Discord</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Private. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
     <style>
         /* Base styles */
         body {
@@ -90,7 +147,9 @@
         }
 
         .button:hover, .button:focus {
-            background: #5a4daa; /* Darker shade for hover state */
+            background: #5a4da
+
+a; /* Darker shade for hover state */
             transform: translateY(-2px); /* Slight lift */
         }
 
@@ -148,40 +207,12 @@
             }
         }
     </style>
-</head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about" class="about">
-            <h1>Welcome to Private</h1>
-            <p>At Private, we breathe life into your ideas. Our dedicated team of developers and designers are committed to crafting websites that not only look stunning but also function seamlessly. We understand that your website is the digital face of your business, and our mission is to ensure that it represents you in the best light possible. We're more than just a web development agency; we're your partners in navigating the digital world.</p>
-        </section>
-        <section id="services" class="services">
-            <h2>Our Expertise</h2>
-            <p>We specialize in a wide array of web development services to cater to all your digital needs:</p>
-            <!-- ... (Your services list HTML content goes here) -->
-        </section>
-        <!-- ... (Other sections HTML content goes here) -->
-    </main>
-    <footer class="footer">
-        <p>© 2024 Private. All rights reserved.</p>
-    </footer>
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-        
+
                 const targetElement = document.querySelector(this.getAttribute('href'));
                 if (targetElement) {
                     targetElement.scrollIntoView({
@@ -221,3 +252,6 @@
     </script>
 </body>
 </html>
+```
+
+This code combines your HTML, CSS, and JavaScript into a single document for easy reference. Please ensure that you have the necessary JSON data and image URLs in place for the dynamic loading of portfolio items to work as intended.
